@@ -1,0 +1,239 @@
+
+
+/* Default styling for larger screens */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hide the menu icon by default, show only on small screens */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar {
+  margin-top: 0 !important; /* Use !important to override any conflicting styles */
+}
+
+/* Sidebar styling */
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  display: flex;
+}
+
+.sidebar a,
+.close-menu {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar a:hover,
+.close-menu:hover {
+  /* background-color: #575757; */
+}
+
+#light-mode{
+      background-color: #1976d2;
+      color: whitesmoke;
+}
+
+
+
+/* Close menu button styling */
+.close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Responsive design: Show menu icon only on small screens */
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  
+}
+
+@media (max-width:725px) {
+  .nav-items{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 30px; */
+ 
+  color:black;
+  
+}
+
+
+
+.box{
+   margin: 20px;
+  
+}
+.banner{
+  width:250px;
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 5px;
+}
+.cardbody{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 5px;
+}
+.discription{
+  width:230px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+/* a:link {
+  color: red;
+}
+a:visited {
+  color:red;
+} */
+.title{
+  color:orange;
+}
+
+
+.smallBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.movie-detail-container{
+  max-width: 750px;
+  padding: 16px;
+}
+.add-movie-form{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.register-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto ;
+  width: 300px;
+  gap: 20px;
+}
+.register{
+  text-align: center;
+}
+
+.carousel-item{
+  height: 80vh;
+  object-fit:fill;
+}
+
+.movie-actor{
+
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   margin-left: 30px;
+}
+
+.actor-sub{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.actor-img{
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   object-fit:fill;
+}
+
+.actor-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.actor-image{
+
+   width: 30%;
+   height: 300px;
+   object-fit: contain;
+   
+}
+
+#acted-movies{
+
+  color: red;
+}
+
+.actor-sub{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.movie-single-actor{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px;
+}
+
+.actor-card {
+  display: flex;
+  margin-left: 38px;
+}
