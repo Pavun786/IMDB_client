@@ -37,7 +37,7 @@ function CreateActor(){
     validationSchema:actorValidationSchema,
     
     onSubmit:(newActor)=>{
-        // newActor.DOB = value.$d
+        
         newActor.DOB = value ? value.$d : null;
        console.log(newActor)
       addActor(newActor);

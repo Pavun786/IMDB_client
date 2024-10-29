@@ -41,7 +41,7 @@ const LoginValidationSchema = yup.object({
            else {
              const result = await data.json();
             console.log("Success",result);
-            localStorage.setItem("token",result.token);//after login we set this token in localstorage
+            localStorage.setItem("token",result.token);
             localStorage.setItem("Role",result.Role)
             localStorage.setItem("userName",result.userName)
             navigate("/movies");
@@ -81,7 +81,6 @@ const LoginValidationSchema = yup.object({
             onChange={formik.handleChange}
             name="Password" 
             onBlur={formik.handleBlur} 
-            //here error & helpertext is Meterial UI feature word..
             error={formik.touched.Password && formik.errors.Password}
             helperText={formik.touched.Password && formik.errors.Password ? formik.errors.Password : null}/>
           <Button type="submit" variant="contained">submit</Button>
