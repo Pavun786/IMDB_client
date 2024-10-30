@@ -31,7 +31,7 @@ function EditActor(){
 
   
     return(
-        <div>
+        <div className="editActor-container">
         {getActor ? <EditActorForm getActor={getActor}/> : "Loading..."}
         </div>
     )

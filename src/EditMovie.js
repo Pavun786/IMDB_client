@@ -34,7 +34,7 @@ function EditMovie() {
   };
 
   return (
-    <div>
+    <div className="editMovie-container">
       {loading ? "Loading..." : <EditMovieForm movie={currentMovie} onSubmit={handleUpdateMovie} />}
     </div>
   );
@@ -94,6 +94,7 @@ function EditMovieForm({ movie, onSubmit }) {
 
   return (
     <form className="smallBox" onSubmit={handleSubmit}>
+      <h3>Edit-Movie</h3>
       <TextField 
       label="Name" 
       value={values.Name} 

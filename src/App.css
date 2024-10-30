@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 
@@ -13,9 +14,6 @@
   cursor: pointer;
 }
 
-.navbar {
-  margin-top: 0 !important; 
-}
 
 
 .sidebar {
@@ -65,6 +63,27 @@
   font-size: 16px;
 }
 
+
+.movie-detail-container{
+  /* background-color: #1976d2; */
+  
+}
+
+.editMovie-container,.editActor-container,.editProducer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.addMovie-container{
+  padding: 40px;
+  
+}
+
+
+
 @media (max-width: 600px) {
   .menu-icon {
     display: block;
@@ -80,7 +99,9 @@
 @media (max-width:725px) {
   .nav-items{
     display: none;
+    
   }
+
 }
 
 
@@ -147,7 +168,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 20px auto;
   gap: 1rem;
 }
 .movie-detail-container{

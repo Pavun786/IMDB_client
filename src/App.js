@@ -3,7 +3,7 @@ import {Routes,Route,Link, Navigate,useParams, useNavigate} from "react-router-d
 import MovieList from './movielist';
 import NotFound from './notfound';
 import AddMovie from './Addmovie';
-import { useState} from "react";
+import { useState,useEffect} from "react";
 import Button from '@mui/material/Button';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,8 +13,8 @@ import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import MovieDetails from './MovieDetails';
 import EditMovie from './EditMovie';
-import { Login } from './Login';
-import { Register } from './Register';
+import Login from './Login';
+import Register  from './Register';
 import Home from './Home';
 import MoviesByActor from './MoviesByActor';
 import CreateActor from './CreateActor';
@@ -24,7 +24,7 @@ import EditProducer from './EditProducer';
 import MoviesByProducer from './MoviesByProducer';
 import ProtectedRoute from './ProtectedRoute';
 import MenuIcon from "@mui/icons-material/Menu";
-import { useEffect } from 'react';
+
 
 function App() {
   const [mode, setMode] = useState("light");

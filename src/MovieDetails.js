@@ -22,7 +22,7 @@ function MovieDetails() {
   console.log(movie)
 
   return (
-    <div>
+    <div className="movie-detail-container">
       {movie.Trailer && (
         <iframe
           width="100%"
@@ -84,7 +84,7 @@ function getVideoIdFromUrl(url) {
     const videoId = urlSearchParams.get("v") || url.split("/").pop();
     return videoId;
   } else {
-    // If it's not a YouTube URL, return an empty string
+    
     return "";
   }
 }

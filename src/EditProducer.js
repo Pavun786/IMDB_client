@@ -31,7 +31,7 @@ function EditProducer(){
 
     
     return(
-        <div>
+        <div className="editProducer-container">
         {getProducer ? <EditProducerForm getProducer={getProducer}/> : "Loading..."}
         </div>
     )

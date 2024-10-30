@@ -99,8 +99,8 @@ function AddMovie(){
     getAllProducers();
   }, []);
   return(
-      <form className="smallBox" onSubmit={handleSubmit}>
-
+      <form className="smallBox addMovie-container" onSubmit={handleSubmit}>
+      <h3>Add-Movie</h3>
       <TextField 
        label="Name"
        value={values.Name}
